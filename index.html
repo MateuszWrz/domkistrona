@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domki Letniskowe - Twój Wymarzony Wypoczynek</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Leśne Zacisze</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars" id="menuIcon"></i>
+        </div>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#home" onclick="closeMenu()">Strona główna</a></li>
+            <li><a href="#about" onclick="closeMenu()">O nas</a></li>
+            <li><a href="#cottages" onclick="closeMenu()">Domki</a></li>
+            <li><a href="#amenities" onclick="closeMenu()">Udogodnienia</a></li>
+            <li><a href="#gallery" onclick="closeMenu()">Galeria</a></li>
+            <li><a href="#location" onclick="closeMenu()">Lokalizacja</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Twój wymarzony wypoczynek w sercu natury</h1>
+        <p>Komfortowe domki letniskowe w malowniczej okolicy</p>
+        <a href="#cottages" class="btn">Zobacz ofertę</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>O naszych domkach</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Witamy w "Leśnym Zaciszu" - miejscu, gdzie natura spotyka się z
+              komfortem. Nasze domki letniskowe położone są w malowniczej
+              okolicy, otoczone lasem i blisko jeziora, co stwarza idealne
+              warunki do wypoczynku i relaksu.
+            </p>
+            <p>
+              Od ponad 15 lat zapewniamy naszym gościom niezapomniane wakacje w
+              przytulnych, w pełni wyposażonych domkach. Każdy z nich został
+              zaprojektowany z myślą o Waszym komforcie i prywatności.
+            </p>
+            <p>
+              Niezależnie od tego, czy planujesz rodzinne wakacje, romantyczny
+              weekend we dwoje, czy aktywny wypoczynek z przyjaciółmi - nasze
+              domki są idealnym wyborem dla Ciebie!
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="/placeholder.svg?height=400&width=600"
+              alt="Widok na domki letniskowe"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cottages Section -->
+    <section id="cottages" class="cottages">
+      <div class="container">
+        <h2>Nasze domki</h2>
+        <div class="cottages-grid">
+          <div class="cottage-card">
+            <div class="cottage-image">
+              <img
+                src="/placeholder.svg?height=300&width=400"
+                alt="Domek Sosnowy"
+              />
+            </div>
+            <div class="cottage-info">
+              <h3>Domek Sosnowy</h3>
+              <p class="cottage-capacity">
+                <i class="fas fa-users"></i> 2-4 osoby
+              </p>
+              <p>
+                Przytulny domek idealny dla par lub małych rodzin. Wyposażony w
+                sypialnię z podwójnym łóżkiem, rozkładaną sofę w salonie, aneks
+                kuchenny oraz łazienkę.
+              </p>
+              <p class="cottage-price">od 300 zł / doba</p>
+            </div>
+          </div>
+
+          <div class="cottage-card">
+            <div class="cottage-image">
+              <img
+                src="/placeholder.svg?height=300&width=400"
+                alt="Domek Brzozowy"
+              />
+            </div>
+            <div class="cottage-info">
+              <h3>Domek Brzozowy</h3>
+              <p class="cottage-capacity">
+                <i class="fas fa-users"></i> 4-6 osób
+              </p>
+              <p>
+                Przestronny domek dla rodzin. Posiada dwie sypialnie, salon z
+                rozkładaną sofą, w pełni wyposażoną kuchnię, łazienkę oraz taras
+                z widokiem na las.
+              </p>
+              <p class="cottage-price">od 450 zł / doba</p>
+            </div>
+          </div>
+
+          <div class="cottage-card">
+            <div class="cottage-image">
+              <img
+                src="/placeholder.svg?height=300&width=400"
+                alt="Domek Dębowy"
+              />
+            </div>
+            <div class="cottage-info">
+              <h3>Domek Dębowy</h3>
+              <p class="cottage-capacity">
+                <i class="fas fa-users"></i> 6-8 osób
+              </p>
+              <p>
+                Luksusowy domek dla większych grup. Trzy sypialnie, dwie
+                łazienki, przestronny salon z kominkiem, w pełni wyposażona
+                kuchnia oraz duży taras z grillem.
+              </p>
+              <p class="cottage-price">od 600 zł / doba</p>
+            </div>
+          </div>
+
+          <div class="cottage-card">
+            <div class="cottage-image">
+              <img
+                src="/placeholder.svg?height=300&width=400"
+                alt="Domek Świerkowy"
+              />
+            </div>
+            <div class="cottage-info">
+              <h3>Domek Świerkowy</h3>
+              <p class="cottage-capacity">
+                <i class="fas fa-users"></i> 2-3 osoby
+              </p>
+              <p>
+                Kameralny domek z antresolą. Na parterze znajduje się salon z
+                aneksem kuchennym i łazienką, na antresoli przytulna sypialnia.
+                Idealny na romantyczny weekend.
+              </p>
+              <p class="cottage-price">od 350 zł / doba</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+      <div class="container">
+        <h2>Udogodnienia</h2>
+        <div class="amenities-grid">
+          <div class="amenity-item">
+            <i class="fas fa-wifi"></i>
+            <h3>Bezpłatne Wi-Fi</h3>
+            <p>
+              We wszystkich domkach dostępne jest szybkie łącze internetowe.
+            </p>
+          </div>
+
+          <div class="amenity-item">
+            <i class="fas fa-parking"></i>
+            <h3>Parking</h3>
+            <p>Bezpłatny, monitorowany parking dla naszych gości.</p>
+          </div>
+
+          <div class="amenity-item">
+            <i class="fas fa-fire"></i>
+            <h3>Miejsce na ognisko</h3>
+            <p>
+              Specjalnie przygotowane miejsce na wspólne ogniska i grillowanie.
+            </p>
+          </div>
+
+          <div class="amenity-item">
+            <i class="fas fa-swimming-pool"></i>
+            <h3>Dostęp do jeziora</h3>
+            <p>Zaledwie 200m od domków znajduje się jezioro z plażą.</p>
+          </div>
+
+          <div class="amenity-item">
+            <i class="fas fa-bicycle"></i>
+            <h3>Wypożyczalnia rowerów</h3>
+            <p>Możliwość wypożyczenia rowerów do eksploracji okolicy.</p>
+          </div>
+
+          <div class="amenity-item">
+            <i class="fas fa-child"></i>
+            <h3>Plac zabaw</h3>
+            <p>Bezpieczny plac zabaw dla najmłodszych gości.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Widok na domek')"
+          >
+            <img src="/domekTest.jpeg" alt="Widok na domek" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Wnętrze domku')"
+          >
+            <img
+              src="/placeholder.svg?height=300&width=400"
+              alt="Wnętrze domku"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Taras domku')"
+          >
+            <img
+              src="/placeholder.svg?height=300&width=400"
+              alt="Taras domku"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Jezioro')"
+          >
+            <img src="/placeholder.svg?height=300&width=400" alt="Jezioro" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Okolica')"
+          >
+            <img src="/placeholder.svg?height=300&width=400" alt="Okolica" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Zachód słońca')"
+          >
+            <img
+              src="/placeholder.svg?height=300&width=400"
+              alt="Zachód słońca"
+            />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Łazienka')"
+          >
+            <img src="/placeholder.svg?height=300&width=400" alt="Łazienka" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Kuchnia')"
+          >
+            <img src="/placeholder.svg?height=300&width=400" alt="Kuchnia" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+      <div class="container">
+        <h2>Lokalizacja</h2>
+        <div class="location-content">
+          <div class="location-map">
+            <img
+              src="/placeholder.svg?height=400&width=600"
+              alt="Mapa lokalizacji"
+            />
+          </div>
+          <div class="location-info">
+            <h3>Jak do nas dotrzeć?</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Leśna 123, 00-000 Piękna
+              Okolica
+            </p>
+            <p>Nasze domki położone są w malowniczej okolicy, zaledwie:</p>
+            <ul>
+              <li>5 km od centrum miasta</li>
+              <li>200 m od jeziora</li>
+              <li>50 km od najbliższego lotniska</li>
+              <li>2 km od głównej drogi krajowej</li>
+            </ul>
+            <p>
+              W pobliżu znajdują się liczne atrakcje turystyczne, szlaki piesze
+              i rowerowe oraz restauracje serwujące lokalne przysmaki.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Skontaktuj się z nami</h3>
+            <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+            <p><i class="fas fa-envelope"></i> kontakt@lesnezacisze.pl</p>
+            <p><i class="fas fa-clock"></i> Recepcja czynna: 8:00 - 20:00</p>
+            <div class="social-media">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="contact-image">
+            <img src="/placeholder.svg?height=400&width=600" alt="Recepcja" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Leśne Zacisze</h3>
+            <p>Twój wymarzony wypoczynek w sercu natury</p>
+          </div>
+          <div class="footer-links">
+            <h4>Szybkie linki</h4>
+            <ul>
+              <li><a href="#home">Strona główna</a></li>
+              <li><a href="#about">O nas</a></li>
+              <li><a href="#cottages">Domki</a></li>
+              <li><a href="#amenities">Udogodnienia</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#location">Lokalizacja</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Zapisz się do newslettera</h4>
+            <p>Otrzymuj informacje o promocjach i wydarzeniach</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Twój adres e-mail" />
+              <button type="submit" class="btn-small">Zapisz się</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Leśne Zacisze. Wszelkie prawa zastrzeżone.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scritp.js"></script>
+  </body>
+</html>
