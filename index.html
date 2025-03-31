@@ -9,7 +9,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <style></style>
   </head>
   <body>
     <!-- Header -->
@@ -69,7 +68,7 @@
           </div>
           <div class="about-image">
             <img
-              src="/placeholder.svg?height=400&width=600"
+              src="/domkistrona/photos/domkiletniskowe.jpg"
               alt="Widok na domki letniskowe"
             />
           </div>
@@ -85,7 +84,7 @@
           <div class="cottage-card">
             <div class="cottage-image">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/domkistrona/photos/domektest.jpeg"
                 alt="Domek Sosnowy"
               />
             </div>
@@ -106,12 +105,12 @@
           <div class="cottage-card">
             <div class="cottage-image">
               <img
-                src="/placeholder.svg?height=300&width=400"
-                alt="Domek Brzozowy"
+                src="/domkistrona/photos/domkiletniskowe.jpg"
+                alt="Domek z kamienia"
               />
             </div>
             <div class="cottage-info">
-              <h3>Domek Brzozowy</h3>
+              <h3>Domek z kamienia</h3>
               <p class="cottage-capacity">
                 <i class="fas fa-users"></i> 4-6 osób
               </p>
@@ -127,7 +126,7 @@
           <div class="cottage-card">
             <div class="cottage-image">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/domkistrona/photos/widoknadomki.jpg"
                 alt="Domek Dębowy"
               />
             </div>
@@ -148,7 +147,7 @@
           <div class="cottage-card">
             <div class="cottage-image">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/domkistrona/photos/domektest.jpeg"
                 alt="Domek Świerkowy"
               />
             </div>
@@ -222,83 +221,59 @@
       <div class="container">
         <h2>Galeria</h2>
         <div class="gallery-grid">
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Widok na domek')"
-          >
-            <img src="/domekTest.jpeg" alt="Widok na domek" />
+          <div class="gallery-item" onclick="openModal(0)">
+            <img
+              src="/domkistrona/photos/domektest.jpeg"
+              alt="Widok na domek"
+            />
             <div class="gallery-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
           </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Wnętrze domku')"
-          >
+          <div class="gallery-item" onclick="openModal(1)">
             <img
-              src="/placeholder.svg?height=300&width=400"
+              src="/domkistrona/photos/domkiletniskowe.jpg"
               alt="Wnętrze domku"
             />
             <div class="gallery-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
           </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Taras domku')"
-          >
+          <div class="gallery-item" onclick="openModal(2)">
+            <img src="/domkistrona/photos/widoknadomki.jpg" alt="Taras domku" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(3)">
+            <img src="/domkistrona/photos/domektest.jpeg" alt="Jezioro" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(4)">
+            <img src="/domkistrona/photos/domkiletniskowe.jpg" alt="Okolica" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(5)">
             <img
-              src="/placeholder.svg?height=300&width=400"
-              alt="Taras domku"
-            />
-            <div class="gallery-overlay">
-              <i class="fas fa-search-plus"></i>
-            </div>
-          </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Jezioro')"
-          >
-            <img src="/placeholder.svg?height=300&width=400" alt="Jezioro" />
-            <div class="gallery-overlay">
-              <i class="fas fa-search-plus"></i>
-            </div>
-          </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Okolica')"
-          >
-            <img src="/placeholder.svg?height=300&width=400" alt="Okolica" />
-            <div class="gallery-overlay">
-              <i class="fas fa-search-plus"></i>
-            </div>
-          </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Zachód słońca')"
-          >
-            <img
-              src="/placeholder.svg?height=300&width=400"
+              src="/domkistrona/photos/widoknadomki.jpg"
               alt="Zachód słońca"
             />
             <div class="gallery-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
           </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Łazienka')"
-          >
-            <img src="/placeholder.svg?height=300&width=400" alt="Łazienka" />
+          <div class="gallery-item" onclick="openModal(6)">
+            <img src="/domkistrona/photos/domektest.jpeg" alt="Łazienka" />
             <div class="gallery-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
           </div>
-          <div
-            class="gallery-item"
-            onclick="openModal('/placeholder.svg?height=800&width=1200', 'Kuchnia')"
-          >
-            <img src="/placeholder.svg?height=300&width=400" alt="Kuchnia" />
+          <div class="gallery-item" onclick="openModal(7)">
+            <img src="/domkistrona/photos/domkiletniskowe.jpg" alt="Kuchnia" />
             <div class="gallery-overlay">
               <i class="fas fa-search-plus"></i>
             </div>
@@ -310,8 +285,17 @@
     <!-- Modal -->
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
+      <div class="gallery-nav">
+        <button class="gallery-nav-btn" onclick="changeImage(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="gallery-nav-btn" onclick="changeImage(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
       <img class="modal-content" id="modalImage" />
       <div id="caption"></div>
+      <div class="gallery-counter" id="galleryCounter"></div>
     </div>
 
     <!-- Location Section -->
@@ -320,27 +304,32 @@
         <h2>Lokalizacja</h2>
         <div class="location-content">
           <div class="location-map">
-            <img
-              src="/placeholder.svg?height=400&width=600"
-              alt="Mapa lokalizacji"
-            />
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41552.24934893991!2d22.415963713982087!3d49.38969719972483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bf6a823200107%3A0xd2023eb8ed67629d!2sPola%C5%84czyk%20Cypel!5e0!3m2!1spl!2spl!4v1743409428913!5m2!1spl!2spl"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           <div class="location-info">
             <h3>Jak do nas dotrzeć?</h3>
             <p>
-              <i class="fas fa-map-marker-alt"></i> Leśna 123, 00-000 Piękna
-              Okolica
+              <i class="fas fa-map-marker-alt"></i> Polańczyk Cypel, Bieszczady
             </p>
-            <p>Nasze domki położone są w malowniczej okolicy, zaledwie:</p>
+            <p>
+              Nasze domki położone są w malowniczej okolicy Bieszczad, zaledwie:
+            </p>
             <ul>
-              <li>5 km od centrum miasta</li>
-              <li>200 m od jeziora</li>
-              <li>50 km od najbliższego lotniska</li>
-              <li>2 km od głównej drogi krajowej</li>
+              <li>5 min spacerem od jeziora Solińskiego</li>
+              <li>10 km od Soliny</li>
+              <li>25 km od Leska</li>
+              <li>90 km od lotniska w Rzeszowie</li>
             </ul>
             <p>
-              W pobliżu znajdują się liczne atrakcje turystyczne, szlaki piesze
-              i rowerowe oraz restauracje serwujące lokalne przysmaki.
+              W pobliżu znajdują się liczne szlaki turystyczne, wypożyczalnie
+              sprzętu wodnego oraz restauracje serwujące lokalne przysmaki.
             </p>
           </div>
         </div>
@@ -356,8 +345,7 @@
             <h3>Skontaktuj się z nami</h3>
             <p><i class="fas fa-phone"></i> +48 123 456 789</p>
             <p><i class="fas fa-envelope"></i> kontakt@lesnezacisze.pl</p>
-            <p><i class="fas fa-clock"></i> Recepcja czynna: 8:00 - 20:00</p>
-            <div class="social-media">
+            <!-- <div class="social-media">
               <a href="#" class="social-icon"
                 ><i class="fab fa-facebook"></i
               ></a>
@@ -365,10 +353,10 @@
                 ><i class="fab fa-instagram"></i
               ></a>
               <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
+            </div> -->
           </div>
           <div class="contact-image">
-            <img src="/placeholder.svg?height=400&width=600" alt="Recepcja" />
+            <img src="/domkistrona/photos/widoknadomki.jpg" alt="Recepcja" />
           </div>
         </div>
       </div>
@@ -394,17 +382,9 @@
               <li><a href="#contact">Kontakt</a></li>
             </ul>
           </div>
-          <div class="footer-newsletter">
-            <h4>Zapisz się do newslettera</h4>
-            <p>Otrzymuj informacje o promocjach i wydarzeniach</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Twój adres e-mail" />
-              <button type="submit" class="btn-small">Zapisz się</button>
-            </form>
-          </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 Leśne Zacisze. Wszelkie prawa zastrzeżone.</p>
+          <p>&copy; 2025 Leśne Zacisze. Wszelkie prawa zastrzeżone.</p>
         </div>
       </div>
     </footer>
